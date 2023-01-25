@@ -3,5 +3,6 @@ public class Main {
 
         SignUpManager signUpManager=new SignUpManager(new AgeUserCheckService());
         signUpManager.signUp(new User(1,"Mustafa",28));
+
     }
 }
