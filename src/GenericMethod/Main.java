@@ -32,7 +32,7 @@ public class Main {
     }
 
 
-    public static <E extends Aday> E birinci(E e1,E e2){
+    public static <Object extends Aday> Object birinci(Object e1,Object e2){
         if (e1.puanHesapla()>e2.puanHesapla()){
             return e1;
         }else return e2;
