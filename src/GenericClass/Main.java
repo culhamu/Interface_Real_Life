@@ -12,12 +12,17 @@ public class Main {
         String[] strings={"Java","Python","C++","Php"};
         Ogrenci[] ogrencis={new Ogrenci("Mustafa"),new Ogrenci("Mehmet"),new Ogrenci("Ayse")};
 
-        CharYazdir.yazdir(characters);
+        YazdirmaSinifi<Character> yazdir_char=new YazdirmaSinifi<>();
+        YazdirmaSinifi<Integer> yazdir_int=new YazdirmaSinifi<>();
+        YazdirmaSinifi<String> yazdir_string=new YazdirmaSinifi<>();
+        YazdirmaSinifi<Ogrenci> yazdir_ogrnc=new YazdirmaSinifi<>();
+
+        yazdir_char.yazdir(characters);
         System.out.println("*********************************");
-        IntegerYazdir.yazdir(integers);
+        yazdir_string.yazdir(strings);
         System.out.println("*********************************");
-        StringYazdir.yazdir(strings);
+        yazdir_int.yazdir(integers);
         System.out.println("*********************************");
-        OgrenciYazdir.yazdir(ogrencis);
+        yazdir_ogrnc.yazdir(ogrencis);
     }
 }

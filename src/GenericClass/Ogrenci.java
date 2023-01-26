@@ -17,6 +17,6 @@ public class Ogrenci {
 
     @Override
     public String toString() {
-        return "isim='" + isim;
+        return "isim=" + isim;
     }
 }
